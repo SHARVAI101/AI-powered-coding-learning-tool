@@ -1,0 +1,565 @@
+Arrays,Write a function in java to find an integer in an array.,"public static boolean find(int arr[], int toFind) {
+int index = -1;
+for (int i = 0; i < arr.length; i++) {
+if (arr[i] == toFind) {
+index = i;
+break;
+}
+}
+if (index == -1) {
+return false;
+} else {
+return true;
+}
+}"
+Arrays,Write a function in java to find an integer in an array.,"public static boolean find(int arr[], int toFind) {
+    for (int i = 0; i < arr.length; i++) {
+        if (arr[i] == toFind)
+            return true;
+    }
+    return false;
+}"
+Strings,Write a function in java to reverse a string without using StringBuilder.,"public static String reverseString(String str) {
+        char[] chars = new char[str.length()];
+        for (int i = 0; i < str.length(); i++) {
+            chars[i] = str.charAt(str.length() - i - 1);
+        }
+        return new String(chars);
+    }"
+Strings,Write a function in java to reverse a string without using StringBuilder.,"public static String reverseString(String str) {
+char[] chars = new char[str.length()];
+int index = 0;
+for (int i = str.length() - 1; i >= 0; i--) {
+chars[index++] = str.charAt(i);
+}
+return new String(chars);
+}"
+Strings,Write a function in java to reverse a string without using StringBuilder.,"public static String reverseString(String str) {
+    char[] chars = new char[str.length()];
+    for (int i = 0; i < str.length(); i++) {
+        chars[i] = str.charAt(str.length() - i - 1);
+    }
+    return new String(chars);
+}"
+Strings,Write a function in java to reverse a string without using StringBuilder.,"public static String reverseString(String str) {
+    char[] chars = new char[str.length()];
+    int index = 0;
+    for (int i = str.length() - 1; i >= 0; i--) {
+        chars[index++] = str.charAt(i);
+    }
+    return new String(chars);
+}"
+Operators,Write a function in java to add 2 integers.,"public static int add(int a, int b){
+    return a + b;
+}"
+Strings,Write a function in java to reverse a string without using StringBuilder.,"public static String reverseString(String str) {
+    String reversed = """";
+    for (int i = str.length() - 1; i >= 0; i--) {
+        reversed += str.charAt(i);
+    }
+    return reversed;
+}"
+Strings,Write a function in java to reverse a string without using StringBuilder.,"public static String reverseString(String str) {
+        char[] chars = new char[str.length()];
+        int i = 0;
+        for (int j = 0; j < str.length(); j++) {
+            chars[i] = str.charAt(str.length() - j - 1);
+            i++;
+        }
+        return new String(chars);
+    }"
+Strings,Write a function in java to reverse a string without using StringBuilder.,"public static String reverseString(String str) {
+char[] chars = new char[str.length()];
+int i = 0;
+for (int j = str.length() - 1; j >= 0; j--) {
+chars[i] = str.charAt(j);
+i++;
+}
+return new String(chars);
+}"
+Strings,Write a function in java to reverse a string without using StringBuilder.,"public static String reverseString(String str) {
+    if (str == null || str.length() <= 1) {
+      return str;
+    }
+    char[] chars = new char[str.length()];
+    int index = 0;
+    for (int i = str.length() - 1; i >= 0; i--) {
+      chars[index++] = str.charAt(i);
+    }
+    return new String(chars);
+  }"
+Strings,Write a function in java to reverse a string without using StringBuilder.,"public static String reverseString(String str) {
+    // Initialize an empty string for the reversed string
+    String reversed = """";
+    
+    // Iterate through each character in the original string starting from the end and append it to the new string
+    for (int i = str.length() - 1; i >= 0; i--) {
+        reversed += str.charAt(i);
+    }
+    
+    // Return the reversed string
+    return reversed;
+}"
+Strings,Write a function in java to reverse a string without using StringBuilder.,"public static String reverseString(String str) {
+char[] chars = new char[str.length()];
+int index = 0;
+for (int i = str.length() - 1; i >= 0; i--) {
+chars[index++] = str.charAt(i);
+}
+return new String(chars);
+}"
+Strings,Write a function in java to reverse a string without using StringBuilder.,"public static String reverseString(String str) {
+    if (str == null || str.length() <= 1) {
+        return str;
+    }
+    
+    char[] chars = new char[str.length()];
+    for (int i = 0; i < str.length(); i++) {
+        chars[i] = str.charAt(str.length() - 1 - i);
+    }
+    
+    return new String(chars);
+}"
+Strings,Write a function in java to reverse a string without using StringBuilder.,"public static String reverseString(String str) {
+    int length = str.length();
+    char[] chars = new char[length];
+    for (int i = 0; i < length; i++) {
+        chars[i] = str.charAt(length - i - 1);
+    }
+    return new String(chars);
+}"
+Strings,Write a function in java to reverse a string without using StringBuilder.,"public static String reverseString(String str) {
+        // Convert the string into an array of characters
+        char[] arr = new char[str.length()];
+        int i = 0;
+        for (int j = str.length() - 1; j >= 0; j--) {
+            arr[i] = str.charAt(j);
+            i++;
+        }
+        // Convert the array back into a string
+        return new String(arr);
+    }"
+Strings,Write a function in java to reverse a string without using StringBuilder.,"public static String reverseString(String str) {
+    char[] chars = new char[str.length()];
+    for (int i = 0; i < str.length(); i++) {
+        chars[i] = str.charAt(str.length() - i - 1);
+    }
+    return new String(chars);
+}"
+Strings,Write a function in java to reverse a string without using StringBuilder.,"public static String reverseString(String str) {
+char[] chars = new char[str.length()];
+int i = 0;
+for (int j = str.length() - 1; j >= 0; j--) {
+chars[i] = str.charAt(j);
+i++;
+}
+return new String(chars);
+}"
+Strings,Write a function in java to reverse a string without using StringBuilder.,"public static String reverseString(String str) {
+        char[] charArray = new char[str.length()];
+        for (int i = 0; i < str.length(); i++) {
+            charArray[i] = str.charAt(str.length() - i - 1);
+        }
+        return new String(charArray);
+    }"
+Strings,Write a function in java to reverse a string without using StringBuilder.,"public static String reverseString(String str) {
+        char[] chars = new char[str.length()];
+        int index = 0;
+        for (int i = str.length() - 1; i >= 0; i--) {
+            chars[index++] = str.charAt(i);
+        }
+        return new String(chars);
+    }"
+Strings,Write a function in java to reverse a string without using StringBuilder.,"public static String reverseString(String str) {
+        char[] chars = new char[str.length()];
+        for (int i = 0; i < str.length(); i++) {
+            chars[i] = str.charAt(str.length() - 1 - i);
+        }
+        return new String(chars);
+    }"
+Strings,Write a function in java to reverse a string without using StringBuilder.,"public static String reverseString(String str) {
+    char[] chars = new char[str.length()];
+    int i = 0;
+    for (int j = str.length() - 1; j >= 0; j--) {
+        chars[i] = str.charAt(j);
+        i++;
+    }
+    return new String(chars);
+}"
+Strings,Write a function in java to reverse a string without using StringBuilder.,"public static String reverseString(String str) {
+    return new StringBuilder(str).reverse().toString(); //this is incorrect
+}"
+Strings,Write a function in java to reverse a string without using StringBuilder.,"public static String reverseString(String str) {
+    if (str == null || str.length() <= 1) {
+        return str;
+    }
+    char[] chars = new char[str.length()];
+    int index = 0;
+    for (int i = str.length() - 1; i >= 0; i--) {
+        chars[index++] = str.charAt(i);
+    }
+    return new String(chars);
+}"
+Strings,Write a function in java to reverse a string without using StringBuilder.,"public static String reverseString(String str) {
+char[] chars = new char[str.length()];
+for (int i = 0; i < str.length(); i++) {
+chars[i] = str.charAt(str.length() - i - 1);
+}
+return new String(chars);
+}"
+Strings,Write a function in java to reverse a string without using StringBuilder.,"public static String reverseString(String str) {
+    int n = str.length();
+    char[] chars = new char[n];
+    for (int i = 0; i < n; i++) {
+        chars[i] = str.charAt(n - i - 1);
+    }
+    return new String(chars);
+}"
+Strings,Write a function in java to reverse a string without using StringBuilder.,"public static String reverseString(String str) {
+    int len = str.length();
+    char[] arr = new char[len];
+    for (int i = 0; i < len; i++) {
+        arr[i] = str.charAt(len - i - 1);
+    }
+    return new String(arr);
+}"
+Strings,Write a function in java to reverse a string without using StringBuilder.,"public static String reverseString(String str) {
+char[] chars = new char[str.length()];
+int i = 0;
+for (int j = str.length()-1; j >=0 ; j--) {
+chars[i++] = str.charAt(j);
+}
+return new String(chars);
+}"
+Strings,Write a function in java to reverse a string without using StringBuilder.,"public static String reverseString(String str) {
+        int len = str.length();
+        char[] arr = new char[len];
+        for (int i = 0; i < len; i++) {
+            arr[i] = str.charAt(len - i - 1);
+        }
+        return new String(arr);
+    }"
+Strings,Write a function in java to reverse a string without using StringBuilder.,"public static String reverseString(String str) {
+int length = str.length();
+char[] chars = new char[length];
+for (int i = 0; i < length; i++) {
+chars[i] = str.charAt(length - i - 1);
+}
+return new String(chars);
+}"
+Strings,Write a function in java to reverse a string without using StringBuilder.,"public static String reverseString(String str){
+    char[] chars = new char[str.length()];
+    int i = 0;
+    for (int j = str.length() - 1; j >= 0; j--) {
+        chars[i] = str.charAt(j);
+        i++;
+    }
+    return new String(chars);
+}"
+Strings,Write a function in java to reverse a string without using StringBuilder.,"public static String reverseString(String str) {
+// First, split the input string into an array of characters.
+char[] chars = new char[str.length()];
+for (int i = 0; i < str.length(); i++) {
+    chars[i] = str.charAt(str.length() - 1 - i);
+}
+
+// Next, create a new string from the array of characters.
+return new String(chars);
+}"
+Strings,Write a function in java to reverse a string without using StringBuilder.,"public static String reverseString(String str)
+{
+    int len = str.length();
+    char[] chars = new char[len];
+    int i = 0;
+    while (i < len)
+    {
+        chars[i] = str.charAt(len - i - 1); // get the last character of the string
+        i++;
+    }
+    // convert the char array back to a string
+    String revStr = new String(chars);
+    return revStr;
+}"
+Strings,Write a function in java to reverse a string without using StringBuilder.,"public static String reverseString(String str) {
+   char[] chars = new char[str.length()];
+   for (int i = 0; i < str.length(); i++) {
+      chars[i] = str.charAt(str.length() - 1 - i);
+   }
+   return new String(chars);
+}"
+Strings,Write a function in java to reverse a string without using StringBuilder.,"public static String reverseString(String str) {
+    char[] chars = new char[str.length()];
+    int index = 0;
+    for (int i = str.length() - 1; i >= 0; i--) {
+        chars[index++] = str.charAt(i);
+    }
+    return new String(chars);
+}"
+Strings,Write a function in java to reverse a string without using StringBuilder.,"public static String reverseString(String str) {
+        char[] chars = new char[str.length()];
+        int index = 0;
+        for (int i = str.length() - 1; i >= 0; i--) {
+            chars[index++] = str.charAt(i);
+        }
+        return new String(chars);
+    }"
+Strings,Write a function in java to reverse a string without using StringBuilder.,"public static String reverseString(String str) {
+    if (str == null || str.length() <= 1)
+        return str;
+    StringBuffer sb = new StringBuffer(str);
+    sb = sb.reverse();
+    return sb.toString();
+}"
+Strings,Write a function in java to reverse a string without using StringBuilder.,"public static String reverseString(String str){
+    char[] chars = new char[str.length()];
+    for (int i = 0; i < str.length(); i++) {
+        chars[i] = str.charAt(str.length() - 1 - i);
+    }
+    return new String(chars);
+}"
+Strings,Write a function in java to reverse a string without using StringBuilder.,"public static String reverseString(String str) {
+char[] chars = new char[str.length()];
+for (int i = 0; i < str.length(); i++) {
+chars[i] = str.charAt(str.length() - i - 1);
+}
+return new String(chars);
+}"
+Strings,Write a function in java to reverse a string without using StringBuilder.,"public static String reverseString(String str) {
+    if (str == null || str.length() == 1)
+        return str;
+
+    char[] chars = new char[str.length()];
+    for (int i = 0; i < str.length(); i++) {
+        chars[i] = str.charAt(str.length() - i - 1);
+    }
+
+    return new String(chars);
+}"
+Strings,Write a function in java to reverse a string without using StringBuilder.,"public static String reverseString(String str){
+// Split the string into an array of characters
+char[] chars = new char[str.length()];
+int i=0;
+for(int j=str.length()-1; j>=0; j--) {
+    chars[i] = str.charAt(j);
+    i++;
+}
+// Convert the array of characters back into a string
+return new String(chars);
+}"
+Strings,Write a function in java to reverse a string without using StringBuilder.,"public static String reverseString(String str) {
+    char[] chars = new char[str.length()];
+    for (int i = 0; i < str.length(); i++) {
+        chars[i] = str.charAt(str.length() - 1 - i);
+    }
+    return new String(chars);
+}"
+Strings,Write a function in java to reverse a string without using StringBuilder.,"public static String reverseString(String str) {
+        if (str == null || str.length() <= 1) {
+            return str;
+        }
+        
+        char[] chars = new char[str.length()];
+        for (int i = 0; i < str.length(); i++) {
+            chars[i] = str.charAt(str.length() - i - 1);
+        }
+        
+        return new String(chars);
+    }"
+Strings,Write a function in java to reverse a string without using StringBuilder.,"public static String reverseString(String str) {
+if (str == null) return """";
+// split the string into an array of characters
+char[] arr = new char[str.length()];
+for (int i = 0; i < str.length(); i++) {
+arr[i] = str.charAt(str.length() - i - 1);
+}
+// join the array into a string and return it
+return new String(arr);
+}"
+Strings,Write a function in java to reverse a string without using StringBuilder.,"public static String reverseString(String str) {
+    if (str == null || str.length() <= 1) {
+        return str;
+    }
+    char[] chars = new char[str.length()];
+    for (int i = 0; i < str.length(); i++) {
+        chars[i] = str.charAt(str.length() - 1 - i);
+    }
+    return new String(chars);
+}"
+Strings,Write a function in java to reverse a string without using StringBuilder.,"public static String reverseString(String str) {
+    char[] chars = new char[str.length()];
+    int index = 0;
+
+    for (int i = str.length() - 1; i >= 0; i--) {
+        chars[index] = str.charAt(i);
+        index++;
+    }
+
+    return new String(chars);
+}"
+Strings,Write a function in java to reverse a string without using StringBuilder.,"public static String reverseString(String str) {
+    int length = str.length();
+    char[] chars = new char[length];
+    
+    // Copy the characters from the input string into the new array
+    for (int i = 0; i < length; i++) {
+        chars[i] = str.charAt(length - 1 - i);
+    }
+    
+    // Convert the new array of characters back into a string
+    return new String(chars);
+}"
+Strings,Write a function in java to reverse a string without using StringBuilder.,"public static String reverseString(String str) {
+    char[] chars = new char[str.length()];
+    for (int i = 0; i < str.length(); i++) {
+        chars[i] = str.charAt(str.length() - 1 - i);
+    }
+    return new String(chars);
+}"
+Strings,Write a function in java to reverse a string without using StringBuilder.,"public static String reverseString(String str) {
+if (str == null || str.length() <= 1)
+return str;
+char[] chars = new char[str.length()];
+int i = 0;
+for (int j = str.length() - 1; j >= 0; j--) {
+chars[i] = str.charAt(j);
+i++;
+}
+return new String(chars);
+}"
+Strings,Write a function in java to reverse a string without using StringBuilder.,"public static String reverseString(String str){
+    if(str == null || str.length() <= 1){
+        return str;
+    }
+    
+    char[] chars = new char[str.length()];
+    
+    for(int i = 0; i < str.length(); i++){
+        chars[i] = str.charAt(str.length() - 1 - i);
+    }
+    
+    return new String(chars);
+}"
+Strings,Write a function in java to reverse a string without using StringBuilder.,"public static String reverseString(String str) {
+char[] arr = new char[str.length()];
+int i = 0;
+for (int j = str.length() - 1; j >= 0; j--) {
+arr[i] = str.charAt(j);
+i++;
+}
+return new String(arr);
+}"
+Strings,Write a function in java to reverse a string without using StringBuilder.,"public static String reverseString(String str){
+    // Reverse the string
+    String reversedStr = """";
+    for(int i = str.length() - 1; i >= 0; i--)
+        reversedStr += str.charAt(i);
+    return reversedStr;
+}"
+Strings,Write a function in java to reverse a string without using StringBuilder.,"public static String reverseString(String str) {
+    char[] chars = new char[str.length()];
+    int index = 0;
+    for (int i = 0; i < str.length(); i++) {
+        chars[index++] = str.charAt(str.length() - i - 1);
+    }
+    return new String(chars);
+}"
+Strings,Write a function in java to reverse a string without using StringBuilder.,"public static String reverseString(String str) {
+    if (str == null || str.length() <= 1) return str;
+    char[] chars = new char[str.length()];
+    int i = 0;
+    for (int j = str.length() - 1; j >= 0; j--) {
+        chars[i++] = str.charAt(j);
+    }
+    return new String(chars);
+}"
+Strings,Write a function in java to reverse a string without using StringBuilder.,"public static String reverseString(String str) {
+    int len = str.length();
+    char[] arr = new char[len];
+    for (int i = 0; i < len; i++) {
+        arr[i] = str.charAt(len - i - 1);
+    }
+    return new String(arr);
+}"
+Operators,Write a function in java to add 2 integers.,"public static int add(int a, int b) { //Your code here
+return (a + b);
+}"
+Operators,Write a function in java to add 2 integers.,"public static int add(int a, int b) {
+int sum = a + b;
+return sum;
+}"
+Strings,Write a function in java to reverse a string without using StringBuilder.,"public static String reverseString(String str) {
+    char[] chars = new char[str.length()];
+    for (int i = 0; i < str.length(); i++) {
+        chars[i] = str.charAt(str.length() - 1 - i);
+    }
+    return new String(chars);
+}"
+Arrays,Write a function in java to find an integer in an array.,"public static boolean findIntegerInArray(int arr[], int toFind) {
+    boolean result = false;
+
+    for (int i = 0; i < arr.length; i++) {
+        if (arr[i] == toFind) {
+            result = true;
+            break;
+        }
+    }
+
+    return result;
+}"
+Arrays,Write a function in java to find an integer in an array.,"public static boolean findIntegerInArray(int arr[], int toFind) {
+	for(int i = 0; i < arr.length; i++){
+		if(arr[i] == toFind){
+			return true;
+		}
+	}
+	return false;
+}"
+Arrays,Write a function in java to find an integer in an array.,"public static boolean findIntegerInArray(int arr[], int toFind) {
+    for (int i = 0; i < arr.length; i++) {
+        if (arr[i] == toFind) {
+            return true;
+        }
+    }
+    return false;
+}"
+Arrays,Write a function in java to find an integer in an array.,"public static boolean findIntegerInArray(int arr[], int toFind) {
+    for (int i = 0; i < arr.length; i++) {
+      if (arr[i] == toFind) {
+        return true;
+      }
+    }
+    return false;
+  }"
+Strings,Write a function in java to reverse a string without using StringBuilder.,"public static String reverseString(String str) {
+String reversed = """";
+for (int i = str.length() - 1; i >= 0; i--) {
+reversed += str.charAt(i);
+}
+return reversed;
+}"
+Strings,Write a function in java to reverse a string without using StringBuilder.,"public static String reverseString(String str) {
+    char[] chars = new char[str.length()];
+    for (int i = 0; i < str.length(); i++) {
+        chars[i] = str.charAt(str.length() - i - 1);
+    }
+    return new String(chars);
+}"
+Operators,Write a function in java to add 2 integers.,"public static int add(int a, int b) {
+    return a + b;
+}"
+Strings,Write a function in java to reverse a string without using StringBuilder.,"public static String reverseString(String str) {
+char[] chars = new char[str.length()];
+
+for (int i = 0; i < str.length(); i++) {
+chars[str.length() - i - 1] = str.charAt(i);
+}
+
+return new String(chars);
+}"
+Strings,Write a function in java to reverse a string without using StringBuilder.,"public static String reverseString(String str) {
+    char[] chars = new char[str.length()];
+    for (int i = 0; i < str.length(); i++) {
+        chars[i] = str.charAt(str.length() - 1 - i);
+    }
+    return new String(chars);
+}"
